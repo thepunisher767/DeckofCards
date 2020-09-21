@@ -1,0 +1,14 @@
+﻿@model Hand
+@{
+    ViewData["Title"] = "GetDeck";
+}
+
+<h1>GetDeck</h1>
+
+@foreach (Card card in Model.cards)
+{
+    <h6>@card.value - @card.suit</h6>
+<img src="@card.image" />
+     }
+<h2></h2>
+
